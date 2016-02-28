@@ -1,12 +1,5 @@
 /* 
- HTU21D Humidity Sensor Library
- By: Nathan Seidle
- SparkFun Electronics
- Date: September 22nd, 2013
- License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
- 
  Get humidity and temperature from the HTU21D sensor.
- 
  */
  
 
