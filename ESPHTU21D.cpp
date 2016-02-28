@@ -1,18 +1,5 @@
 /*
  HTU21D Humidity Sensor Library
- By: Nathan Seidle
- SparkFun Electronics
- Date: September 22nd, 2013
- License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
-
- This library allows an Arduino to read from the HTU21D low-cost high-precision humidity sensor.
- 
- If you have feature suggestions or need support please use the github support page: https://github.com/sparkfun/HTU21D
-
- Hardware Setup: The HTU21D lives on the I2C bus. Attach the SDA pin to A4, SCL to A5. If you are using the SparkFun
- breakout board you *do not* need 4.7k pull-up resistors on the bus (they are built-in).
- 
- Link to the breakout board product:
  
  Software:
  Call HTU21D.Begin() in setup.
@@ -37,7 +24,7 @@ HTU21D::HTU21D()
 //Start I2C communication
 void HTU21D::begin(void)
 {
-  Wire.begin(2,14);
+  Wire.begin(2,14); //sda = PIN IO2, scl= PIN IO14
 }
 
 //Read the humidity
